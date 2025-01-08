@@ -8,7 +8,7 @@ export interface IProduct extends Document {
   discount: number;
   image: string;
   status: 'In Stock' | 'Stock Out';
-  productCode: string;
+  productCode: string; //will be generated in utils/productCode.ts
   category: ICategory | mongoose.Types.ObjectId; //reff to catagory model
 }
 

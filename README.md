@@ -23,6 +23,9 @@ We use **MongoDB** as the database named `productdb`. The system has two main co
 - `Category` (in `models/Category.ts`)
   - `name`: String (unique)
 
+### Data model diagram
+![data-model-diag](data-model-diag.png)
+
 Controllers are used for adding new products and categories, editing and filter. `./controllers`
 
 ## Generating Product Code
@@ -70,14 +73,17 @@ Ensure that **MongoDB** is running in the background.\
 }
 ```
 
-### 3. Check if a Product Exists with productCode
+### 3. List all the products
+- **GET** `http://localhost:5000/api/products`
+
+### 4. Check if a Product Exists with productCode
 
 - **GET** `http://localhost:5000/api/products/exists/f31de62-0as0`
 
 
-### 4. Update Product
+### 5. Update Product
 
-- **PATCH** `http://localhost:5000/api/products/:productId`
+- **PATCH** `http://localhost:5000/api/products/f31de62-0as0`
 - **Body** (JSON):
 
 ```json
@@ -88,7 +94,7 @@ Ensure that **MongoDB** is running in the background.\
 }
 ```
 
-### 5. Filter Products
+### 6. Filter Products
 
 Filter products by **category** or **name** (case-insensitive). The response will also include the final price after applying the discount.
 
