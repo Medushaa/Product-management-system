@@ -1,0 +1,54 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE or editor specific files
+.vscode/
+.idea/
+
+# Build directories
+dist/
+build/
+
+# TypeScript specific
+*.tsbuildinfo
+*.d.ts
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# MacOS specific
+*.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+
+# Debug files
+debug/
+debug.log
+*.out
+
+# Specific dependencies or files that may not be needed
+*.tgz

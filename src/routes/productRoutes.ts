@@ -5,7 +5,7 @@ import Product from '../models/Product';
 const router = express.Router();
 
 
-// GET route to list all products
+//list all products
 router.get('/', async (req, res) => {
   try {
     const products = await Product.find(); // Fetch all products from the DB
